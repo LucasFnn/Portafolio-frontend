@@ -1,0 +1,53 @@
+<a [routerLink]="['/admin']" style="position:absolute; left:30px;"><img src="../../../assets/img/flecha-izquierda.png" alt="icono volver"></a>
+
+<div class="box"  style="margin-top: 100px; margin-bottom: 80px;">
+
+    <div> 
+      <h2 class="text-center mt-5">Proyectos</h2>
+  
+      <div class="d-flex  justify-content-center">
+      <button class="btn btn-primary mt-3" (click)="agregarProyecto()">Agregar proyecto</button>
+      </div>  
+   </div>
+      
+     
+  <div class="contenedor  mx-auto  p-5 text-center">
+  
+      <h3 class="p-3 ">Editar proyectos</h3>
+     
+  
+      <div class="datos_usuario mx-auto text-center">
+       
+          <table class="table table-striped border-bottom  mx-auto">
+      
+              <thead>
+                  <tr class="fw-bold">
+                      <td>NOMBRE</td>
+                      <td>DESCRIPCION</td>
+                      <td>URL</td>
+                      <td>ACCIONES</td>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr *ngFor="let proyecto of proyectos">
+                      <td>{{proyecto.nombre}}</td>
+                      <td>{{proyecto.descripcion}}</td>
+                      <td>{{proyecto.url}}</td>
+                      <td class="w-25">
+                          <a (click)="verEditarProyecto(proyecto.id)"    class="btn  mx-2"> <img src="../../../assets/img/lapiz.png" width="25px" alt="icono_editar"> </a>
+                          <button (click)="eliminarProyecto(proyecto.id)" class="btn  mx-2"> <img src="../../../assets/img/cerrar.png" width="25px" alt="icono_eliminar"> </button>
+                      </td>
+                  </tr>
+               
+              </tbody>
+          </table>
+  
+      </div>
+  
+  
+      
+  
+  
+  </div>
+  
+  </div>

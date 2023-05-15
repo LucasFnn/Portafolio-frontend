@@ -1,0 +1,38 @@
+<a [routerLink]="['/estudios']" style="position:absolute; left:30px;"><img src="../../../assets/img/flecha-izquierda.png" alt="icono volver"></a>
+
+<div class="caja container col-md-6 mx-auto p-4 border border-5  mb-5"  style="margin-top: 100px;">
+    <h3 class="text-center pt-4 pb-5">Agregar Estudio</h3>
+     <form (ngSubmit)="onSubmit()" class="pb-5 px-3">
+
+        <p  style="color: red ; font:bold;">Debes ingresar todos los datos</p>
+        
+        <div class="form-group my-1 ">
+            <label>Establecimiento</label>
+            <input type="text" class="form-control" id="establecimiento" name="establecimiento"
+            [(ngModel)] = "estudio.establecimiento">
+        </div>
+
+        <div class="form-group my-1">
+            <label>Fecha de inicio</label>
+            <input type="date" class="form-control" id="fecha_inicio" name="fecha_inicio"
+            [(ngModel)] = "estudio.fecha_inicio">
+        </div>
+
+        <div class="form-group my-1">
+            <label>Fecha fin</label>
+            <input type="date" class="form-control" id="fecha_fin" name="fecha_fin"
+            [(ngModel)] = "estudio.fecha_fin">
+        </div>
+  
+  
+        <div class="form-group my-1 ">
+            <label>Titulo</label>
+            <input type="text" class="form-control" id="titulo" name="titulo"
+            [(ngModel)] = "estudio.titulo">
+        </div>
+  
+    
+       <button class="btn btn-success mx-5 mt-3">Agregar Estudio</button>
+
+     </form>
+    </div>

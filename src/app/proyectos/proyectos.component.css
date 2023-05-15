@@ -1,0 +1,39 @@
+
+
+@media(max-width:1020){
+   .carta{
+    width: 300px;
+    margin: 0px auto;
+    
+   }
+
+
+
+}
+
+@media(max-width:300px){
+   .carta{
+    width: 70%;
+    margin: 0px auto;
+   }
+
+
+}
+
+@media(max-width:719px){
+   .carta{
+    width: 70%;
+    margin: 0px auto;
+   }
+
+   .contenedor{
+      display: flex;
+      justify-content: center;
+   }
+   
+
+}
+
+
+
+

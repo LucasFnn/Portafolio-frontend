@@ -1,0 +1,26 @@
+<div class="contenedor_login text-center  p-5 ">
+
+    <h3 class="pt-5">Iniciar sesion</h3>
+
+<form  class="p-4"  (ngSubmit)="submit()">
+    <div class="mb-3">
+      <label for="username" class="form-label w-50">Nombre de usuario: </label>
+      <input type="text" [(ngModel)]="datosLogin.username" class="form-control w-50 mx-auto" id="username" name="username" aria-describedby="emailHelp" required> 
+    </div>
+    <div class="mb-3">
+      <label for="password" class="form-label w-50">Contraseña</label>
+      <input [(ngModel)]="datosLogin.password" type="password" class="form-control w-50 mx-auto" id="password" name="password" required>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Ingresar</button>
+  </form>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+</div>

@@ -1,0 +1,46 @@
+<a [routerLink]="['/admin']" style="position:absolute; left:30px;"><img src="../../../assets/img/flecha-izquierda.png" alt="icono volver"></a>
+
+<div class="box"  style="margin-top: 100px;padding-bottom: 100px; margin-bottom: 100px;">
+
+    <div> 
+      <h2 class="text-center mt-5">Formularios recibidos</h2> 
+   </div>
+      
+     
+  <div class="contenedor  mx-auto  p-5 text-center">
+      
+  
+      <div class="datos_usuario mx-auto text-center">
+       
+          <table class="table table-striped border-bottom  mx-auto">
+      
+              <thead>
+                  <tr class="fw-bold">
+                      <td>NOMBRE</td>
+                      <td>EMAIL</td>
+                      <td>MENSAJE</td>
+                      <td>ACCIONES</td>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr *ngFor="let formulario of formularios">
+                      <td>{{formulario.nombre}}</td>
+                      <td>{{formulario.email}}</td>
+                      <td>{{formulario.mensaje}}</td>
+                      <td class="w-25">
+                          <button (click)="eliminarFormulario(formulario.id)" class="btn  mx-2"> <img src="../../../assets/img/cerrar.png" width="25px" alt="icono_eliminar"> </button>
+                      </td>
+                  </tr>
+               
+              </tbody>
+          </table>
+  
+      </div>
+  
+  
+      
+  
+  
+  </div>
+  
+  </div>

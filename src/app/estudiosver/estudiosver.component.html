@@ -1,0 +1,27 @@
+
+<!--Estudios-->
+<div class="container justify-content-between  mb-5">
+
+    <h1 class="h1 text-center text-primary py-5 ">
+        ESTUDIOS
+    </h1>
+
+    <div class="card-group d-flex flex-wrap contenedor pb-5">
+
+        <div class="card mx-3 py-4  border border-primary carta_"  *ngFor="let estudio of estudios">
+            <div class="card-body" >
+                <h5 class="card-title">{{estudio.titulo}}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">
+                    <p>Fecha inicio/fin: {{estudio.fecha_inicio}} -  {{estudio.fecha_fin}}</p>
+        
+                </h6>
+                <p class="card-text">{{estudio.establecimiento}}</p>
+                <a href="#" class="card-link">Descargar certificado</a>
+               
+            </div>
+        </div>
+    </div>
+
+    
+
+</div>

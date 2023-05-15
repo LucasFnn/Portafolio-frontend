@@ -1,0 +1,70 @@
+
+    <a class="mt-5" [routerLink]="['/admin']" style="position:absolute; left:30px;"><img src="../../../assets/img/flecha-izquierda.png" alt="icono volver"></a>
+
+
+<div class="contenedor  mx-auto  p-5 text-center">
+
+    <h3 class="p-3 ">Editar perfil</h3>
+   
+
+    <div class="datos_usuario mx-auto text-center">
+        <h4 class="p-3 mt-5  mb-4">Datos de usuario</h4>
+        <table class="table table-striped border-bottom  mx-auto">
+    
+            <thead>
+                <tr class="fw-bold">
+                    <td>NOMBRE</td>
+                    <td>APELLIDO</td>
+                    <td>EMAIL</td>
+                    <td>TELÈFONO</td>
+                    <!--<td>ACCIONES</td>-->
+                </tr>
+            </thead>
+            <tbody>
+                <tr  *ngFor="let usuario of usuarios">
+                    <td>{{usuario.nombre}}</td>
+                    <td>{{usuario.apellido}}</td>
+                    <td>{{usuario.email}}</td>
+                    <td>{{usuario.telefono}}</td>
+                  <!-- <td class="w-25">
+                        <a (click)="verEditarUsuario(usuario.id)"  class="btn  mx-2"> <img src="../../../assets/img/lapiz.png" width="25px" alt="icono_editar"> </a>
+                        
+                    </td>-->
+                </tr>
+       
+            </tbody>
+        </table>
+    </div>
+
+
+    <div class="datos_redes mx-auto text-center">
+        <h4 class="p-3   mb-4  mt-5">Redes sociales</h4>
+
+        <button class="btn  btn-primary mx-5 mb-5" (click)="agregarRed()">Agregar Red</button>
+
+        <table class="table table-striped border-bottom  mx-auto">
+    
+            <thead>
+                <tr class="fw-bold">
+                    <td>NOMBRE</td>
+                    <td>URL</td>
+                    <td>ACCIONES</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let red of redes">
+                    <td>{{red.nombre}}</td>
+                    <td>{{red.url}}</td>
+         
+                    <td class="w-25">
+                        <button (click)="verEditarRed(red.id)"  class="btn  mx-2"> <img src="../../../assets/img/lapiz.png" width="25px" alt="icono_editar"> </button>
+                        <button  (click)="eliminarRed(red.id)" class="btn  mx-2"> <img src="../../../assets/img/cerrar.png" width="25px" alt="icono_eliminar"> </button>
+                    </td>
+                </tr>
+       
+            </tbody>
+        </table>
+    </div>
+
+
+</div>

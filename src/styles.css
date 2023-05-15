@@ -1,1 +1,198 @@
-/* You can add global styles to this file, and also import other style files */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+@font-face {
+  font-family: Overpass;
+  src: url(../src/assets/fonts/OverpassMono-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: SourcePro;
+  src: url(../src/assets/fonts/SourceCodePro-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Cambay;
+  src: url(../src/assets/fonts/Cambay-Regular.ttf);
+}
+
+/* Base */
+* {
+  font-family: SourcePro;
+}
+
+
+.texto {
+  justify-content: center;
+  position: relative;
+  color: #0D6EFD;
+  font-weight: bold;
+  font-family: "Anonymous Pro", monospace;
+  letter-spacing: 7px;
+  overflow: hidden;
+  border-right: 2px solid #cccccc;
+  white-space: nowrap;
+  animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms infinite;
+}
+
+.texto1 {
+  display: none;
+}
+
+.banner {
+  background: url(../src/assets/img/pexels.jpg) no-repeat center center;
+
+
+
+
+}
+
+h1 {
+  font-family: Overpass;
+}
+
+.about {
+  font-family: Cambay;
+  font-size: 18px;
+  height: auto;
+  margin-left: 30px;
+  box-shadow: rgba(13, 110, 253, 0.4) 5px 5px, rgba(13, 110, 253, 0.3) 10px 10px, rgba(13, 110, 253, 0.2) 15px 15px, rgba(13, 110, 253, 0.1) 20px 20px, rgba(13, 110, 253, 0.05) 25px 25px;
+}
+
+ul li {
+  font-size: 17px;
+  padding: 5px;
+
+}
+
+ul li:hover {
+  text-shadow: 1px 1px 21px rgba(251, 251, 251, 1);
+}
+
+.display-1 {
+  font-size: 60px;
+  text-shadow: 1px 1px white, -1px -1px #333;
+  background-color: #ddd;
+  color: #0D6EFD;
+  padding: 10px;
+}
+
+.card {
+  box-shadow: rgba(13, 110, 253, 0.4) 5px 5px, rgba(13, 110, 253, 0.3) 10px 10px, rgba(13, 110, 253, 0.2) 15px 15px, rgba(13, 110, 253, 0.1) 20px 20px, rgba(13, 110, 253, 0.05) 25px 25px;
+}
+
+.comentbox {
+  box-shadow: rgba(13, 110, 253, 0.4) 5px 5px, rgba(13, 110, 253, 0.3) 10px 10px, rgba(13, 110, 253, 0.2) 15px 15px, rgba(13, 110, 253, 0.1) 20px 20px, rgba(13, 110, 253, 0.05) 25px 25px;
+}
+
+
+
+.yoprogramo {
+  margin-left: 150px;
+}
+
+.icono_arg {
+  width: 128px;
+  float: left;
+}
+
+
+
+/*# sourceMappingURL=styles.css.map */
+
+/* MEDIA QUERYS */
+
+@media(max-width:1200px) {
+  .texto {
+    display: none;
+
+  }
+
+  .texto1 {
+    display: block;
+  }
+
+  .about {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 90%;
+
+  }
+
+  .imagenperfil {
+    display: flex;
+    min-width: 75%;
+  }
+
+
+}
+
+@media(max-width:992px) {
+  .imagenperfil {
+    min-width: 100%;
+
+  }
+
+  .iconos {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+
+
+
+@media(max-width:1200px) {
+  .texto {
+    display: none;
+
+  }
+
+  .texto1 {
+    display: block;
+  }
+
+  .about {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 90%;
+
+  }
+
+  .imagenperfil {
+    display: flex;
+    min-width: 75%;
+  }
+
+
+}
+
+@media(max-width:992px) {
+  .imagenperfil {
+    min-width: 100%;
+
+  }
+
+  .carta_ {
+    width: 100%;
+    box-shadow: rgba(13, 110, 253, 0.4) 5px 5px, rgba(13, 110, 253, 0.3) 10px 10px, rgba(13, 110, 253, 0.2) 15px 15px, rgba(13, 110, 253, 0.1) 20px 20px, rgba(13, 110, 253, 0.05) 25px 25px;
+    min-width: 70%;
+    margin: 50px 100px ;
+  }
+
+  .contenedor {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+@media(max-width:400px) {
+
+  .icono_arg {
+    width: 90px;
+  }
+
+  .yoprogramo {
+    font-size: 13px;
+    margin-left: 100px;
+  }
+}
