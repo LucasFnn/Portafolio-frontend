@@ -8,7 +8,7 @@ import { Usuario } from '../clases/usuario';
 })
 export class PerfilService {
 
-  private urlPerfil = "http://localhost:8080/perfil";
+  private urlPerfil = "https://backend-lucasfnn.onrender.com/perfil";
 
   constructor(private httpClient:HttpClient) { }
 
