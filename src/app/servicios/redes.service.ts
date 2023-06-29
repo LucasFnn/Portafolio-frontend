@@ -9,9 +9,9 @@ import { Observable } from 'rxjs';
 export class RedesService {
 
   
-  private urlRedes = "http://localhost:8080/redes";
-  private urlEliminarRedes = "http://localhost:8080/redes/eliminar";
-  private urlGuardarRed = "http://localhost:8080/redes/guardarred";
+  private urlRedes = "https://backend-lucasfnn.onrender.com/redes";
+  private urlEliminarRedes = "https://backend-lucasfnn.onrender.com/redes/eliminar";
+  private urlGuardarRed = "https://backend-lucasfnn.onrender.com/redes/guardarred";
 
   constructor(private httpClient:HttpClient) { }
 
