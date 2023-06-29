@@ -9,7 +9,7 @@ export class LoginService {
 
   public loginStatusSubjec = new Subject<boolean>();
 
-  private url = "http://localhost:8080";
+  private url = "https://backend-lucasfnn.onrender.com/";
 
   constructor(private http: HttpClient) { }
 
