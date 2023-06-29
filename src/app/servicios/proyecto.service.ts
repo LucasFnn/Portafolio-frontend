@@ -11,9 +11,9 @@ export class ProyectoService {
   constructor(private httpClient:HttpClient) { }
 
 
-  private urlProyectos = "http://localhost:8080/proyectos";
-  private urlProyectosAgregar = "http://localhost:8080/proyectos/guardarproyecto";
-  private urlProyectosEliminar = "http://localhost:8080/proyectos/eliminar";
+  private urlProyectos = "https://backend-lucasfnn.onrender.com/proyectos";
+  private urlProyectosAgregar = "https://backend-lucasfnn.onrender.com/proyectos/guardarproyecto";
+  private urlProyectosEliminar = "https://backend-lucasfnn.onrender.com/proyectos/eliminar";
 
   obtenerListaProyectos():Observable<Proyecto[]>{
     return this.httpClient.get<Proyecto[]>(`${this.urlProyectos}`);
