@@ -10,9 +10,9 @@ export class EstudioService {
 
   constructor(private httpClient:HttpClient) { }
 
-  private urlEstudios = "http://localhost:8080/estudios";
-  private urlEstudiosEliminar = "http://localhost:8080/estudios/eliminar";
-  private urlEstudiosAgregar = "http://localhost:8080/estudios/guardarestudio";
+  private urlEstudios = "https://backend-lucasfnn.onrender.com/estudios";
+  private urlEstudiosEliminar = "https://backend-lucasfnn.onrender.com/estudios/eliminar";
+  private urlEstudiosAgregar = "https://backend-lucasfnn.onrender.com/estudios/guardarestudio";
 
   obtenerListaEstudios():Observable<Estudio[]>{
     return this.httpClient.get<Estudio[]>(`${this.urlEstudios}`);
