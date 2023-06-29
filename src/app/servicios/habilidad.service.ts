@@ -10,10 +10,10 @@ import { Habilidad } from '../clases/habilidad';
 export class HabilidadService {
 
 
-  private urlHabilidades = "http://localhost:8080/habilidades";
-  private urlHabilidadesEliminar = "http://localhost:8080/habilidades/eliminar";
-  private urlHabilidadesAgregar = "http://localhost:8080/habilidades/guardarhabilidad"
-  private urlHabilidadesEditar = "http://localhost:8080/habilidades/{id}"
+  private urlHabilidades = "https://backend-lucasfnn.onrender.com/habilidades";
+  private urlHabilidadesEliminar = "https://backend-lucasfnn.onrender.com/habilidades/eliminar";
+  private urlHabilidadesAgregar = "https://backend-lucasfnn.onrender.com/habilidades/guardarhabilidad"
+  private urlHabilidadesEditar = "https://backend-lucasfnn.onrender.com/habilidades/{id}"
 
   constructor(private httpClient:HttpClient) { }
 
