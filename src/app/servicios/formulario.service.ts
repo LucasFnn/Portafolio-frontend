@@ -10,9 +10,9 @@ export class FormularioService {
 
   constructor(private httpClient:HttpClient) { }
 
-  private urlForms = "http://localhost:8080/formularios";
-  private urlFormsEliminar = "http://localhost:8080/formularios/eliminar";
-  private urlFormsAdd = "http://localhost:8080/formularios/guardarformulario";
+  private urlForms = "https://backend-lucasfnn.onrender.com/formularios";
+  private urlFormsEliminar = "https://backend-lucasfnn.onrender.com/formularios/eliminar";
+  private urlFormsAdd = "https://backend-lucasfnn.onrender.com/formularios/guardarformulario";
 
 
   obtenerListaFormularios():Observable<Formulario[]>{
