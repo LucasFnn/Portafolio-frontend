@@ -10,10 +10,10 @@ export class TextoService {
 
   constructor(private httpClient:HttpClient) { }
 
-  private urlTextos = "http://localhost:8080/textos";
-  private urlTextosEliminar = "http://localhost:8080/textos/eliminar";
-  private urlTextosAgregar = "http://localhost:8080/textos/guardarproyecto";
-  private urlTextosBuscar = "http://localhost:8080/textos/buscar";
+  private urlTextos = "https://backend-lucasfnn.onrender.com/textos";
+  private urlTextosEliminar = "https://backend-lucasfnn.onrender.com/textos/eliminar";
+  private urlTextosAgregar = "https://backend-lucasfnn.onrender.com/textos/guardarproyecto";
+  private urlTextosBuscar = "https://backend-lucasfnn.onrender.com/textos/buscar";
 
   obtenerListaTextos():Observable<Texto[]>{
     return this.httpClient.get<Texto[]>(`${this.urlTextos}`);
