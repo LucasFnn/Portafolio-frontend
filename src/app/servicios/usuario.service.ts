@@ -13,8 +13,8 @@ export class UsuarioService {
   constructor(private httpClient:HttpClient) { }
 
 
-  private urlUsuarios = "http://localhost:8080/usuarios/listar";
-  private urlUsuarioEditar = "http://localhost:8080/usuarios";
+  private urlUsuarios = "https://backend-lucasfnn.onrender.com/usuarios/listar";
+  private urlUsuarioEditar = "https://backend-lucasfnn.onrender.com/usuarios";
 
   obtenerListaUsuarios():Observable<Usuario[]>{
     return this.httpClient.get<Usuario[]>(`${this.urlUsuarios}`);
